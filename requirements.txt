@@ -1,0 +1,12 @@
+fastapi
+unicorn
+torch
+openai
+transformers
+langchain
+python-dotenv
+charset_normalizer
+wrapt
+termcolor
+flatbuffers
+python-multipart
