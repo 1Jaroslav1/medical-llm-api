@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from service import LLMChain
-from schema import HistoryItem, ChatItem, AnswerResponse
+from app.service import LLMChain
+from app.schema import ChatItem, AnswerResponse
 
-llm_chain = LLMChain("abc", 256, 0.4, 0.95, 1.1)
+llm_chain = LLMChain("atom92/medical-gpt-2", 256, 0.7, 0.95, 1.5)
 
 
 app = FastAPI()

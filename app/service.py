@@ -12,7 +12,7 @@ import torch
 import openai
 from langchain.llms import OpenAI
 from dotenv import load_dotenv, find_dotenv
-from schema import HistoryItem, ChatItem
+from app.schema import HistoryItem, ChatItem
 from typing import List
 
 load_dotenv(find_dotenv())
@@ -27,7 +27,7 @@ class LLMChain:
             torch_dtype=torch.bfloat16,
             low_cpu_mem_usage=True,
             trust_remote_code=True,
-            max_memory={0: "15GiB", 1: "15GiB"},
+            max_memory={0: "3GiB", 1: "3GiB"},
             offload_folder="/tmp/offload"
         )
         model.tie_weights()

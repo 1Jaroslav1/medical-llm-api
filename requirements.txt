@@ -1,5 +1,6 @@
 fastapi
 unicorn
+uvicorn
 torch
 openai
 transformers
@@ -10,3 +11,4 @@ wrapt
 termcolor
 flatbuffers
 python-multipart
+accelerate
