@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.service import LLMChain
 from app.schema import ChatItem, AnswerResponse
 
-llm_chain = LLMChain("atom92/medical-gpt-2", 256, 0.7, 0.95, 1.5)
+llm_chain = LLMChain("atom92/medical_lama_ultra", 256, 0.5, 0.95, 1.5)
 
 
 app = FastAPI()

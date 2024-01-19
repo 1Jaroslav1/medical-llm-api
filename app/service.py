@@ -27,13 +27,13 @@ class LLMChain:
             torch_dtype=torch.bfloat16,
             low_cpu_mem_usage=True,
             trust_remote_code=True,
-            max_memory={0: "3GiB", 1: "3GiB"},
+            max_memory={0: "17GiB", 1: "17GiB"},
             offload_folder="/tmp/offload"
         )
         model.tie_weights()
         pipe = pipeline(
             "text-generation",
-            model=model_name,
+            model=model,
             tokenizer=tokenizer,
             max_new_tokens=max_new_tokens,
             temperature=temperature,
